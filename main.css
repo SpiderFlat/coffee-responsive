@@ -1,0 +1,129 @@
+:root {
+    --primary: #483434;
+    --secondary:#6B4F4F;
+    --tertiary:#EED6C4;
+    --quaternary:#FFF3E4;
+
+    --ff-primary: 'Zen Kaku Gothic Antique', sans-serif;
+    --ff-secondary: 'Roboto Serif', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin:0 auto;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: 1.3125rem;
+    line-height: 1.6em;
+    max-width:1000px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Layout */
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%; /* for equal columns! */
+    }
+    
+    .split > * + * { /* adjacent sibling selector*/
+        margin-left: 2em;
+    }
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    font-family: var(--ff-secondary);
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+footer ul {
+    display:flex;
+    padding:1em;
+    list-style: none;
+}
+
+footer li a {
+    color: var(--secondary);
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Utilities */
+
+.text-center {
+    text-align: center;
+}
+
+header,
+section {
+    padding: 3rem 0;
+}
+
+@media (min-width: 40em) {
+    .split {
+        padding: 7rem 0;
+    }
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5 rem);
+}
+
+.container--narrow {
+    max-width: 50rem;
+}
+
+.bg-primary {
+    color:#ccc;
+    background-image: url(/imgs/Coffee/head.jpg);
+}
+
+.bg-primary h2 {
+    margin-bottom: 1em;
+}
+
+.bg-secondary {
+    background: var(--secondary);
+}
+
+.bg-tertiary {
+    background :var(--tertiary);
+}
+
+.bg-tertiary h2 {
+    color:#483434;
+}
+
