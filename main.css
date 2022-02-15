@@ -27,6 +27,7 @@ body {
     font-size: 1.3125rem;
     line-height: 1.6em;
     max-width:1000px;
+    border: 4px solid #000;
 }
 
 img {
@@ -60,22 +61,23 @@ img {
 h1,
 h2,
 h3 {
-    line-height: 1;
+    line-height: 1.5;
     font-family: var(--ff-secondary);
     font-weight: 900;
 }
 
+footer {
+    text-align: center;
+}
 footer ul {
     display:flex;
-    padding:1em;
+    justify-content: space-evenly;
     list-style: none;
 }
 
 footer li a {
     color: var(--secondary);
-    letter-spacing: 0.1em;
     text-decoration: none;
-    text-align: center;
 }
 
 
