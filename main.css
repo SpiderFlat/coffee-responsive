@@ -63,7 +63,6 @@ h3 {
     line-height: 1;
     font-family: var(--ff-secondary);
     font-weight: 900;
-    margin-bottom: 1em;
 }
 
 footer ul {
@@ -108,7 +107,7 @@ section {
 
 .bg-primary {
     color:#ccc;
-    background-image: url(/imgs/Coffee/head.jpg);
+    background-image: url(./imgs/Coffee/head.jpg);
 }
 
 .bg-primary h2 {
